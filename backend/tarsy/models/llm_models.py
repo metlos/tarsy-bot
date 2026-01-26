@@ -222,8 +222,10 @@ class LLMProviderConfig(BaseModel):
  
     def is_auth_configured(self) -> bool:
         """
-        Checks whether the authentication is correctly configured. This merely checks
-        that all auth-related fields are present, not that they have valid values.
+        Checks whether the authentication is correctly configured.
+
+        Returns:
+            bool: True if all auth-related fields required for the provider type are present (not validated though).
         """
 
         def not_empty(v: str | None) -> bool:
