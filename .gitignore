@@ -43,6 +43,7 @@ venv.bak/
 *.swp
 *.swo
 *~
+.mcp.json
 
 # Node.js
 node_modules/
